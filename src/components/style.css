@@ -1,0 +1,30 @@
+.head{
+    color: white;
+}
+.navhead{
+    color: white;
+}
+.navcol{
+    background-color: rgba(255, 255, 255, 0);
+
+}
+@keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .horizontal-scrolling-items {
+    display: flex;
+    font-size: 40px;
+    width: 2600px;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .horizontal-scrolling-items__item {
+    white-space: nowrap;
+  }
